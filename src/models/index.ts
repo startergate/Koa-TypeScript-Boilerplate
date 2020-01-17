@@ -1,5 +1,5 @@
 import { Sequelize } from "sequelize";
-const config = require('../modules/dbInfo');
+import * as config from '../modules/dbInfo'
 
 const sequelize = new Sequelize(config.database, config.id, config.pw, {
     host: config.host,
