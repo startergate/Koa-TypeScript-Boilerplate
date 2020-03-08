@@ -192,5 +192,3 @@ public/
 .idea/vcs.xml
 
 dist/
-
-src/modules/dbInfo.ts
