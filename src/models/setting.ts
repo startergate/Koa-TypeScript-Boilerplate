@@ -1,11 +1,12 @@
-const db = {
-    id: process.env.develop.db.id,
-    pw: process.env.develop.db.pw,
-    database: process.env.develop.db.database,
-    host: process.env.develop.db.host,
-    dialect: process.env.develop.db.dialect
-};
+import { Options } from "sequelize";
+import { Dialect } from "sequelize/types/lib/sequelize";
 
-// TODO: 개발 모드 배포 모드 구분하기
+const db : Options = {
+    username: process.env.DATABASE_ID,
+    password: process.env.DATABASE_PW,
+    database: process.env.DATABASE_NAME,
+    host: process.env.DATABASE_HOST || 'localhost',
+    dialect: process.env.DATABASE_DIALECT as Dialect
+};
 
 export default db;
