@@ -11,12 +11,7 @@ import router from './router';
 
 const app = new Koa();
 
-// setting port
-const port = process.env.PORT || 5000;
-
 app.use(bodyParser());
 app.use(router.routes()).use(router.allowedMethods());
 
-app.listen(port, () => {
-    console.log(`Server started at port ${port}`);
-});
+export default app;
