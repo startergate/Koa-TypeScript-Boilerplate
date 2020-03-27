@@ -23,7 +23,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "cross-env NODE_PATH=./dist NODE_ENV=production pm2 start dist/loader --watch",
+    "start": "cross-env NODE_PATH=./dist NODE_ENV=production pm2 start dist/loader.js --watch",
     "clear": "rimraf dist",
     "build": "tsc",
     "dev": "cross-env NODE_PATH=./src NODE_ENV=develop nodemon --watch 'src/**/*' -e ts,tsx --exec ts-node ./src/loader",
