@@ -1,7 +1,3 @@
-// load environment variables
-import * as dotenv from 'dotenv';
-dotenv.config();
-
 // import Koa.js related package
 import * as Koa from 'koa';
 import * as Router from 'koa-router';
