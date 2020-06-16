@@ -23,10 +23,15 @@
     "typescript": "^3.7.2"
   },
   "scripts": {
-    "start": "cross-env NODE_PATH=./dist NODE_ENV=production pm2 start dist/loader.js --watch",
+
+    "start": "yarn build || cross-env NODE_ENV=production yarn fast-start",
+    "fast-start": "cross-env NODE_ENV=deploy NODE_PATH=./dist node dist/deploy.js",
+    "style-test": "standardx \"src/**/*.ts\" && tsc",
+    "pretty": "prettier es2020 --write \"src/**/*.ts\"",
     "clear": "rimraf dist",
     "build": "tsc",
-    "dev": "cross-env NODE_PATH=./src NODE_ENV=develop nodemon --watch 'src/**/*' -e ts,tsx --exec ts-node ./src/loader",
+    "docker-build": "docker-compose build && docker-compose up -d",
+    "dev": "cross-env NODE_PATH=./src NODE_ENV=develop nodemon --watch 'src/**/*' -e ts,tsx --exec ts-node ./src/deploy.ts",
     "kill": "pm2 kill"
   },
   "repository": {
