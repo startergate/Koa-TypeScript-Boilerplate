@@ -2,7 +2,7 @@
   "name": "koa-typescript-boilerplate",
   "description": "Boilerplate for Koa.js Server using TypeScript",
   "version": "1.0.0",
-  "main": "dist/loader.js",
+  "main": "dist/deploy.js",
   "dependencies": {
     "cross-env": "^6.0.3",
     "dotenv": "^8.2.0",
