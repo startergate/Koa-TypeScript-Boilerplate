@@ -5,15 +5,15 @@ Boilerplate for Koa.js Server using TypeScript
 ```
 yarn install
 ```
-2.1. Start Dev Server
+2. Start Dev Server
 ```
 yarn dev
 ```
-2.2. Start Deploy Server
+3. Start Deploy Server
 ```
 yarn start
 ```
-3. Build Docker Compose Image
+4. Build Docker Compose Image
 ```
 yarn docker-build
 ```
