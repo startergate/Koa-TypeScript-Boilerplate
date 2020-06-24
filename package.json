@@ -23,7 +23,6 @@
     "typescript": "^3.7.2"
   },
   "scripts": {
-
     "start": "yarn build || cross-env NODE_ENV=production yarn fast-start",
     "fast-start": "cross-env NODE_ENV=deploy NODE_PATH=./dist node dist/deploy.js",
     "style-test": "standardx \"src/**/*.ts\" && tsc",
