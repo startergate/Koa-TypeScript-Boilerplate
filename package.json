@@ -17,6 +17,7 @@
     "@types/koa-router": "^7.0.42",
     "@types/node": "^13.9.0",
     "@types/sequelize": "^4.28.8",
+    "nodemon": "^2.0.4",
     "prettier": "^2.1.2",
     "rimraf": "^3.0.0",
     "standardx": "^5.0.0",
